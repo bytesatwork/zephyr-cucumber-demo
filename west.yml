@@ -20,3 +20,8 @@ manifest:
           - cmsis      # required by the ARM port
           - hal_nordic # required by the custom_plank board (Nordic based)
           - hal_stm32  # required by the nucleo_f302r8 board (STM32 based)
+
+    - name: cucumber
+      url: https://github.com/cucumber/cucumber-cpp
+      path: modules/cucumber
+      revision: c5c420097c820583a1ff26f29ca1d6438d00fece

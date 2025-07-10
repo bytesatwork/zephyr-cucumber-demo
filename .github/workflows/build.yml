@@ -13,6 +13,21 @@ jobs:
         with:
           path: example-application
 
+      - name: Install cucumber dependencies
+        run: |
+          sudo apt-get install -y \
+            libasio-dev \
+            libgtest-dev \
+            libtclap-dev \
+            nlohmann-json3-dev \
+            ruby-dev
+
+      - name: Install cucumber
+        run: |
+          sudo gem install \
+            cucumber:9.2.1 \
+            cucumber-wire:7.0.0
+
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
