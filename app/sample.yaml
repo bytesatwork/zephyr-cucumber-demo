@@ -13,3 +13,7 @@ tests:
   app.debug:
     extra_overlay_confs:
       - debug.conf
+  app.cucumber:
+    build_only: false
+    platform_allow: native_sim/native/64
+    harness: pytest
