@@ -16,6 +16,6 @@ if (CONFIG_BOARD_NATIVE_SIM_NATIVE_64)
     set(CUKE_ENABLE_GTEST ON)
     add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/../../modules/cucumber cucumber)
 
-    target_sources(app PRIVATE src/server.cpp)
+    target_sources(app PRIVATE src/server.cpp src/steps.cpp)
     target_link_libraries(app PRIVATE cucumber-cpp-nomain)
 endif()
